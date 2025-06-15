@@ -18,5 +18,6 @@ public class Home {
 
 		Base_driver.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		System.out.println("data 101");
+		System.out.println("data 101");
 	}
 }
