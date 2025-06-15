@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 
 		features = "./src/test/resources/Feature/home.feature",
 		glue = {"stepdef" ,"Hooks"},
-		plugin = {"pretty" , "html:test-report"},
+		plugin = {"pretty" , "html:testoutput/test-report"},
 		monochrome = true
 
 		)
