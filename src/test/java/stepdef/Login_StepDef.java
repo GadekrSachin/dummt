@@ -16,8 +16,13 @@ public class Login_StepDef {
 	@Given("user on home page using valid {string} and {string}")
 	public void user_on_home_page_using_valid_and(String username, String password) throws InterruptedException {
 		Thread.sleep(3000);
-		login.user_onhomepage(username , password );
+		login.user_onhomepage(username, password);
 		Thread.sleep(3000);
+	}
+
+	@Given("getting error using Invalid {string} and {string}")
+	public void getting_error_using_invalid_and(String username, String password) throws InterruptedException {
+		login.user_loginwith_invalid(username, password);
 	}
 
 }

@@ -8,13 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-		features = "./src/test/resources/Feature/home.feature",
+		features = "./src/test/resources/Feature/Login.feature",
 		glue = {"stepdef" ,"Hooks"},
+		tags = "@login_with_invalid",
 		plugin = {"pretty" , "html:testoutput/test-report"},
 		monochrome = true
 
 		)
-
 
 
 public class run {

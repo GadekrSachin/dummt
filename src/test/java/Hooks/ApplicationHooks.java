@@ -3,6 +3,7 @@ package Hooks;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -28,6 +29,7 @@ public class ApplicationHooks {
 	 public void launch_browser() {
 		 basedriver.initializationDriver(pro.getProperty("browser"));
 		 Base_driver. driver.get(pro.getProperty("weburl"));
+		 Base_driver. driver.manage().window().maximize();
 	 }
 
 	@After
