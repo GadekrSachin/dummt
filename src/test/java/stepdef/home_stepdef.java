@@ -3,8 +3,8 @@ package stepdef;
 import org.openqa.selenium.WebDriver;
 
 import com.factory.Base_driver;
-import com.pages.Home;
 
+import Pages.Home;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,6 +13,8 @@ public class home_stepdef {
 	WebDriver driver;
 	Base_driver base = new Base_driver();
 	Home h = new Home(Base_driver.getdriver());
+
+
 
 	@Given("I navigate to Entrata homepage")
 	public void i_navigate_to_entrata_homepage() {
