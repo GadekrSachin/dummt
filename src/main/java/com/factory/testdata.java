@@ -1,6 +1,5 @@
 package com.factory;
 
-import static org.testng.Assert.ARRAY_MISMATCH_TEMPLATE;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
