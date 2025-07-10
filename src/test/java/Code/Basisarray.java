@@ -5,8 +5,10 @@ import java.util.Arrays;
 public class Basisarray {
 
 	public static void main(String[] args) {
-		duplicate();
+
 	}
+
+
 
 	public static void duplicate() {
 		int[] arr1 = { 5, 8, 2, 10, 3, 102, 3, 10 };
@@ -18,6 +20,7 @@ public class Basisarray {
 				}
 			}
 		}
+
 	}
 
 	public static void merge_array() {

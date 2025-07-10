@@ -17,6 +17,7 @@ public class numerical {
 			 n3 = n1+n2;
 			 n1 = n2;
 			 n2 = n3;
+			 
 		 }
 	}
 

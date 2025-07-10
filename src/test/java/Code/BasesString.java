@@ -7,21 +7,32 @@ import java.util.Scanner;
 public class BasesString {
 
 	public static void main(String[] args) {
-		reverse_words_in_sentence();
+		remove_space();
 	}
+
+	public static void remove_space() {
+		String str = "sachin gadekar tester";
+		StringBuilder builder = new StringBuilder();
+
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+			if (ch != ' ') {
+				builder.append(ch);
+			}
+		}
+		System.out.println(builder.toString());
+	}
+
 
 	public static void reverse_words_in_sentence() {
 //		Reverse Words in a Sentence
 
-		String str="Java is fun";
+		String str = "Java is fun";
+		String str2[] = str.split(" ");
 
-		String str2[]= str.split(" ");
-
-		for(int i=str2.length-1; i>= 0; i--) {
+		for (int i = str2.length - 1; i >= 0; i--) {
 			System.out.println(str2[i]);
 		}
-
-
 	}
 
 	public static void remove_int() {
@@ -36,6 +47,21 @@ public class BasesString {
 			}
 		}
 		System.out.println(sBuilder.toString());
+	}
+
+	public static void longest() {
+
+		String str = "Java is super powerful";
+		String str2[] = str.split(" ");
+		String longeString = "";
+
+		for (String word : str2) {
+			if (word.length() > longeString.length()) {
+				longeString = word;
+			}
+		}
+		System.out.println(longeString);
+
 	}
 
 	public static void replace_with() {
@@ -83,10 +109,8 @@ public class BasesString {
 				lowr++;
 			}
 		}
-
 		System.out.println("upper :" + upper);
 		System.out.println("lowr :" + lowr);
-
 	}
 
 	public static void replace() {
@@ -144,14 +168,12 @@ public class BasesString {
 		int count = 0;
 		str = str.toLowerCase();
 		for (int j = 0; j <= str.length() - 1; j++) {
-
 			char c = str.charAt(j);
 			if (c == 'a' | c == 'e' | c == 'i' | c == 'o' | c == 'u') {
 				count++;
 			}
 		}
 		System.out.println(count);
-
 		sc.close();
 	}
 }
