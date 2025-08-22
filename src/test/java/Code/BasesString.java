@@ -4,10 +4,20 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import org.apache.commons.compress.harmony.unpack200.bytecode.forms.IincForm;
+
 public class BasesString {
 
 	public static void main(String[] args) {
-		remove_space();
+		Duplicate_char();
+	}
+
+	public static void Duplicate_char() {
+
+		String nameString = "programmingi";
+		
+		
+
 	}
 
 	public static void remove_space() {
@@ -22,7 +32,6 @@ public class BasesString {
 		}
 		System.out.println(builder.toString());
 	}
-
 
 	public static void reverse_words_in_sentence() {
 //		Reverse Words in a Sentence
@@ -161,8 +170,9 @@ public class BasesString {
 	}
 
 	public static void vowel_count() {
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter your string");
+		System.out.println(" Enter your string ");
 
 		String str = sc.nextLine();
 		int count = 0;
@@ -173,6 +183,7 @@ public class BasesString {
 				count++;
 			}
 		}
+
 		System.out.println(count);
 		sc.close();
 	}

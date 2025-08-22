@@ -5,10 +5,33 @@ import java.util.Arrays;
 public class Basisarray {
 
 	public static void main(String[] args) {
-
+		count();
 	}
 
+	public static void count() {
 
+		int[] num = { 0, -10, 20, 60, -70, -80, };
+		int pocount = 0;
+		int negcount = 0;
+		int nucount = 0;
+
+
+		for (int i = 0; i < num.length; i++) {
+
+			if (num[i] > 0) {
+				pocount++;
+			} else if (num[i]  < 0) {
+				negcount++;
+			} else {
+				nucount++;
+			}
+		}
+
+		System.out.println("positive value :" + pocount);
+		System.out.println("negetive value :" + negcount);
+		System.out.println("nutral value :" +nucount);
+
+	}
 
 	public static void duplicate() {
 		int[] arr1 = { 5, 8, 2, 10, 3, 102, 3, 10 };
@@ -20,7 +43,6 @@ public class Basisarray {
 				}
 			}
 		}
-
 	}
 
 	public static void merge_array() {
@@ -34,7 +56,7 @@ public class Basisarray {
 			arr3[i] = arr1[i];
 		}
 		for (int i = 0; i < arr2.length; i++) {
-			arr3[arr1.length - i] = arr2[i];
+			arr3[arr1.length + i] = arr2[i];
 		}
 		System.out.println(Arrays.toString(arr3));
 

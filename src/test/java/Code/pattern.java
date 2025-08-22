@@ -6,6 +6,10 @@ public class pattern {
 		pattern2();
 	}
 
+	public static void repe() {
+
+	}
+
 	public static void pattern2() {
 
 		for (int i = 5; i >= 0; i--) {
@@ -14,7 +18,6 @@ public class pattern {
 			}
 			System.out.println();
 		}
-
 	}
 
 	public static void pattern1() {
