@@ -6,8 +6,8 @@ public class numerical {
 		prime();
 	}
 
-	
-	
+
+
 	public static void prime() {
 
 		for (int i = 2; i <= 100; i++) {
@@ -29,12 +29,10 @@ public class numerical {
 		int n1 = 0, n2 = 1, n3 = 0;
 
 		for (int i = 2; i <= 8; i++) {
-
 			System.out.println(n3);
 			n3 = n1 + n2;
 			n1 = n2;
 			n2 = n3;
-
 		}
 	}
 
@@ -51,7 +49,6 @@ public class numerical {
 		if (flag == 2) {
 			System.out.println("number is prime");
 		} else {
-
 			System.out.println("number is not prime");
 		}
 	}

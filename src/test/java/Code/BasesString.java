@@ -9,16 +9,9 @@ import org.apache.commons.compress.harmony.unpack200.bytecode.forms.IincForm;
 public class BasesString {
 
 	public static void main(String[] args) {
-		Duplicate_char();
-	}
-
-	public static void Duplicate_char() {
-
-		String nameString = "programmingi";
-		
-		
 
 	}
+
 
 	public static void remove_space() {
 		String str = "sachin gadekar tester";
@@ -166,7 +159,6 @@ public class BasesString {
 			str = str + ch;
 		}
 		System.out.println(str);
-
 	}
 
 	public static void vowel_count() {
