@@ -3,7 +3,6 @@ package Code;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
- 
 
 public class BasesString {
 
@@ -11,6 +10,42 @@ public class BasesString {
 
 	}
 
+	public void remove_duplicate_charecter() {
+		String name = "aaabbcccdee";
+		StringBuilder sb = new StringBuilder();
+		sb.append(name.charAt(0));
+
+		for (int i = 1; i < name.length(); i++) {
+
+			if (name.charAt(i) != name.charAt(i - 1)) {
+				sb.append(name.charAt(i));
+			}
+		}
+		System.out.println(sb.toString());
+	}
+
+	public static void duplicate_in_string() {
+		String name = "Java is fun and Java is powerful";
+
+		String[] name2 = name.split(" ");
+		boolean[] visited = new boolean[name.length()];
+
+		for (int i = 0; i < name2.length; i++) {
+			if (!visited[i]) {
+				int count = 1;
+
+				for (int j = i + 1; j < name2.length; j++) {
+					if (name2[i].equalsIgnoreCase(name2[j])) {
+						count++;
+						visited[j] = true;
+					}
+				}
+				if (count > 1) {
+					System.out.println(name2[i]);
+				}
+			}
+		}
+	}
 
 	public static void remove_space() {
 		String str = "sachin gadekar tester";

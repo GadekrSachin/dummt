@@ -5,7 +5,62 @@ import java.util.Arrays;
 public class Basisarray {
 
 	public static void main(String[] args) {
-		count();
+		second_small();
+	}
+
+	public static void same_element() {
+		int[] a = { 10, 20, 30, 40, 50 };
+
+		int[] b = { 100, 200, 300, 40, 50, 10 };
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < b.length; j++) {
+				if (a[i] == b[j]) {
+					System.out.println(a[i]);
+					break;
+				}
+			}
+		}
+	}
+
+	public static void num_Of_alphabet() {
+		String name = "Java123@2025";
+		int alpha = 0;
+		int num = 0;
+		int spe = 0;
+
+		for (int i = 0; i < name.length(); i++) {
+			char ch = name.charAt(i);
+
+			if (Character.isAlphabetic(ch)) {
+				alpha++;
+			} else if (Character.isDigit(ch)) {
+				num++;
+			} else {
+				spe++;
+			}
+		}
+
+		System.out.println(alpha);
+		System.out.println(num);
+		System.out.println(spe);
+	}
+
+	public static void second_small() {
+		int[] aa = { 12, 5, 8, 1, 19 };
+		int[] b = new int[aa.length];
+
+		for (int i = 0; i < aa.length; i++) {
+			int count = 0;
+			for (int j = 0; j < aa.length; j++) {
+				if (aa[i] > aa[j]) {
+					count++;
+				}
+			}
+			b[count] = aa[i];
+		}
+		System.out.println(b[1]);
+
 	}
 
 	public static void count() {
@@ -15,12 +70,11 @@ public class Basisarray {
 		int negcount = 0;
 		int nucount = 0;
 
-
 		for (int i = 0; i < num.length; i++) {
 
 			if (num[i] > 0) {
 				pocount++;
-			} else if (num[i]  < 0) {
+			} else if (num[i] < 0) {
 				negcount++;
 			} else {
 				nucount++;
@@ -29,7 +83,7 @@ public class Basisarray {
 
 		System.out.println("positive value :" + pocount);
 		System.out.println("negetive value :" + negcount);
-		System.out.println("nutral value :" +nucount);
+		System.out.println("nutral value :" + nucount);
 
 	}
 

@@ -5,21 +5,9 @@ import com.github.dockerjava.api.model.StatisticNetworksConfig;
 public class pattern {
 
 	public static void main(String[] args) {
-		data();
+		pattern1();
 	}
-	public static void data () {
-
-		int n1=0;
-		int n2=1;
-		int n3=0;
-
-		for(int i=2; i<=10; i++) {
-			System.out.println(n3);
-			n3=n1+n2;
-			n1=n2;
-			n2=n3;
-		}
-	}
+	 
 
 
 	public static void pattern2() {

@@ -6,13 +6,10 @@ public class numerical {
 		prime();
 	}
 
-
-
 	public static void prime() {
-
 		for (int i = 2; i <= 100; i++) {
 			boolean isprime = true;
-			for (int j = 2; j <= i / 2; j++) {
+			for (int j = 2; j <= Math.sqrt(i); j++) {
 				if (i % j == 0) {
 					isprime = false;
 					break;
